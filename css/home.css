@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d113f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 30px auto;
+}
+
+.linha1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px  0 20px  ;
+}
+
+.linha1 h1 {
+    color: #ffffff79;
+    font-size: 2.5em;
+}
+
+.linha1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.linha2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha2 h2 {
+    color: #fff;
+    font-size: 2em;
+}
+
+.linha2 p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.carrosel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.linha3 {
+    width: 100%;
+}
+
+.linha3 .carousel {
+    height: 100px;
+    max-height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+
+.linha3 .carousel-inner,
+.linha3 .carousel-item,
+.linha3 .carousel-item img {
+    height: 200px !important;
+    width: 100% !important;
+    object-fit: cover;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,1)) brightness(0.8);
+}
+
+
+.linha3 .carousel-control-prev,
+.linha3 .carousel-control-next {
+    width: 10% !important;
+    opacity: 1 !important;
+    filter: invert(1); /* White arrows on dark */
+}
+
+.linha3 .carousel-control-prev-icon,
+.linha3 .carousel-control-next-icon {
+    background-size: 100%, 100%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.linha3 .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.linha3 .carousel-indicators [data-bs-target] {
+    background-color: rgba(255,255,255,0.5) !important;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.linha3 .carousel-indicators .active {
+    background-color: #fff !important;
+}
+
+.linha4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.hashtags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+
+.linha5{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #5e33d4;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+footer p{
+    color: #fff;
+    font-size: 18px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer nav li {
+    margin: 0 15px;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+i {
+    font-size: 24px;
+    color: rgb(240, 248, 255) !important;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 40px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 10px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.icons i:nth-child(3) {
+    font-size: 40px;
+}
+

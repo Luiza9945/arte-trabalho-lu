@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- ESTRUTRA
+     heard{
+        linha1. icon logo ,h3 "home" , icon de notificação 
+        linha2. barra de pesquisa
+     }
+     main{
+        linha3. carrosel 3 pg (destaques , artistas do ano e empresas contratantes)
+        linha4. fileira de # mais usadas 
+        linha5. cards de artes
+        }
+        footer{ linha6. menu de navegação (icons: home , sobre , criar arte ,chat, perfil ,)}-->
+
+    <header>
+        <div class="linha1">
+            <div class="logo">
+                <img src="..." alt="Logo do site">
+            </div>
+            <h3>Home</h3>
+            <div class="notificacoes">
+                <i class="bi bi-bell-fill"></i>
+            </div>
+        </div>
+        <div class="linha2">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="submit"><i class="bi bi-search"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="linha3">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        </div>
+        <div class="linha4">
+            <div class="hashtags">
+                <span>#arte</span>
+                <span>#design</span>
+                <span>#ilustração</span>
+                <span>#pintura</span>
+                <span>#escultura</span>
+            </div>
+        </div>
+        <div class="linha5">
+            <div class="cards">
+                <div class="card">
+
+                </div>
+                <div class="card">
+
+                </div>
+                <div class="card">
+
+                </div>
+    </main>
+
+    <footer>
+        <div class="icons">
+
+            <i class="bi bi-house-fill"></i>
+            <i class="bi bi-stars"></i>
+            <i class="bi bi-plus-circle"></i>
+            <i class="bi bi-envelope-open-fill"></i>
+            <i class="bi bi-person-fill"></i>
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

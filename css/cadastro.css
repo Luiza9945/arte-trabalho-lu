@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d113f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0 30px auto;
+}
+
+form {
+
+    color: rgb(240, 248, 255);
+    position: relative;
+    width: fit-content;
+}
+
+.form-control {
+    width: 300px !important;
+    max-width: 90vw;
+    background-color: rgba(240, 248, 255, 0.459);
+}
+
+
+h1 {
+    color: rgb(240, 248, 255);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(70, 66, 19) !important;
+    border-color: rgb(192, 192, 25) !important;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+i {
+    font-size: 24px;
+    color: rgb(240, 248, 255) !important;
+    cursor: pointer;
+}
+
+p {
+    color: rgb(240, 248, 255);
+    text-align: center;
+}
+
+a {
+    color: rgb(254, 255, 186);
+    text-align: center;
+    text-decoration: none;
+}
+
+.vlt {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    font-size: 24px;
+    color: rgb(240, 248, 255);
+    cursor: pointer;
+}
+
+.spinning-circle {
+    position: fixed;
+    top: -200px;
+    right: -200px;
+    width: 400px;
+    height: 400px;
+    background: conic-gradient(from 0deg, #a8e6cf, #ffd3a5, #fd8a8a, #a8e6cf);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    z-index: 9999;
+    pointer-events: none;
+    box-shadow: 0 0 20px rgba(255, 255, 100, 0.5);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sp inning-circle2 {
+    position: fixed;
+    bottom: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: conic-gradient(from 0deg, #a8e6cf, #ffd3a5, #fd8a8a, #a8e6cf);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    z-index: 9999;
+    pointer-events: none;
+    box-shadow: 0 0 20px rgba(255, 255, 100, 0.5);
+}
