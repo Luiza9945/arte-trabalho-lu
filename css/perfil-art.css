@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-}
+
 
 body {
     background-color: #1d113f;
@@ -12,7 +8,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 .linha1 h1 {
     color: #fff;
@@ -76,7 +71,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     background-color: #1d113f;
     position: absolute;
     top: 80%;
