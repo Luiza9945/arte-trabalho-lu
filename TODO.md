@@ -1,12 +1,5 @@
-# TODO: Remove CSS overrides conflicting with Bootstrap
+# TODO: Update Home Page Spans to Bootstrap Transparent White
 
-## Steps:
-1. [ ] Confirm plan with user (remove universal resets, body margins, form/button/carousel padding/margin overrides).
-2. [x] Edit css/style.css.
-3. [x] Edit css/login.css.
-4. [x] Edit css/home.css.
-5. [x] Edit css/perfil-art.css.
-6. [x] Edit css/cadastro.css if needed.
-7. [ ] Test pages in browser.
-8. [ ] attempt_completion.
-
+- [x] Step 1: Update the 5 hashtag spans in home.html to use `bg-transparent text-white`
+- [ ] Step 2: Verify changes in browser (refresh page)
+- [ ] Step 3: Mark complete
