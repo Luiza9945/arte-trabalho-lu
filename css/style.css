@@ -1,10 +1,11 @@
-body{
-    background-color: #1d113f;
+body {
+    background-color: #050511;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
+
 }
 
 .container {
@@ -21,12 +22,14 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 20px;
+    gap: 2rem;
 }
 
 .texto {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .texto h1 {
@@ -54,19 +57,16 @@ button {
     transition: background-color 0.3s ease;
 }
 
+.ar-registro {
+    margin-bottom: -9rem;
+}
 .ar-registro p {
-    display: flex;
+     display: flex;
     justify-content: center;
     margin-top: 10px;
     font-size: 1.2em;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-.ar-registro p {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
 }
 
 p {
@@ -79,3 +79,61 @@ a {
     font-size: 18px;
     text-decoration: none;
 }
+
+
+.img-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Floating Frame Squares - Dark Brown */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(var(--rot, 0deg));
+  }
+  50% {
+    transform: translateY(-12px) rotate(calc(var(--rot, 0deg) + 1deg));
+  }
+}
+
+.frames-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.frame {
+  position: absolute;
+  background: rgba(74, 44, 15, 0.4);
+  border: 5px solid #4a2c0f;
+  border-radius: 8px;
+  box-shadow: 
+    0 8px 25px rgba(74, 44, 15, 0.4),
+    inset 0 2px 8px rgba(255,255,255,0.1);
+  animation: float 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* 10 scattered frames with varied sizes/positions/rot/delay */
+.frame1 { width: 80px; height: 80px; left: 30%; top: 6%; --rot: 3deg; animation-delay: 0s; }
+.frame2 { width: 120px; height: 100px; left: 53%; top: 4%; --rot: -2deg; animation-delay: 0.5s; }
+.frame3 { width: 60px; height: 90px; left: 1%; top: 38%; --rot: 1deg; animation-delay: 1s; }
+.frame4 { width: 140px; height: 110px; left: 80%; top: 20%; --rot: -4deg; animation-delay: 1.5s; }
+.frame5 { width: 70px; height: 70px; left: 70%; top: 60%; --rot: 2.5deg; animation-delay: 2s; }
+.frame6 { width: 100px; height: 130px; left: 3%; bottom: 80%; --rot: -1deg; animation-delay: 0.2s; }
+.frame7 { width: 90px; height: 80px; right: 15%; top: 45%; --rot: 4deg; animation-delay: 2.5s; }
+.frame8 { width: 150px; height: 120px; left: 75%; bottom: 13%; --rot: -3deg; animation-delay: 1.2s; }
+.frame9 { width: 50px; height: 110px; right: 3%; top: 5%; --rot: 1.5deg; animation-delay: 3s; }
+.frame10 { width: 110px; height: 90px; left: -5%; top: 24%; --rot: -2.5deg; animation-delay: 0.8s; }

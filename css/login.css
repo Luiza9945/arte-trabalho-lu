@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #1d113f;
+    background-color: #050511;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,16 +69,16 @@ a {
 
 .spinning-circle {
     position: fixed;
-    top: -200px;
-    right: -200px;
-    width: 400px;
-    height: 400px;
-    background: conic-gradient(from 0deg, #a8e6cf, #ffd3a5, #fd8a8a, #a8e6cf);
+    top: -450px;
+    right: -350px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
-    animation: spin 2s linear infinite;
+    object-fit: cover;
+    animation: spin 50s linear infinite;
     z-index: 9999;
     pointer-events: none;
-    box-shadow: 0 0 20px rgba(255, 255, 100, 0.5);
+    box-shadow: 0 0 20px #1d113f;
 }
 
 @keyframes spin {
@@ -87,21 +87,20 @@ a {
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 
 .spinning-circle2 {
     position: fixed;
-    bottom: -200px;
-    left: -200px;
-    width: 400px;
-    height: 400px;
-    background: conic-gradient(from 0deg, #a8e6cf, #ffd3a5, #fd8a8a, #a8e6cf);
+    bottom: -350px;
+    left: -380px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
-    animation: spin 2s linear infinite;
+    animation: spin 50s linear infinite;
     z-index: 9999;
     pointer-events: none;
-    box-shadow: 0 0 20px rgba(255, 255, 100, 0.5);
+    box-shadow: 0 0 20px rgba(6, 0, 37, 0.5);
 }
 

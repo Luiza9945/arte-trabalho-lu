@@ -1,5 +1,7 @@
-# TODO: Update Home Page Spans to Bootstrap Transparent White
+# Task: Add spacing between divs .texto, .img-c, and .ar-registro
 
-- [x] Step 1: Update the 5 hashtag spans in home.html to use `bg-transparent text-white`
-- [ ] Step 2: Verify changes in browser (refresh page)
-- [ ] Step 3: Mark complete
+## Steps:
+- [x] 1. Edit css/style.css to add `gap: 2rem;` to `.container .row` for vertical spacing between the three divs.
+- [ ] 2. Refresh browser to verify spacing.
+- [ ] 3. Task complete.
+
