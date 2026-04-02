@@ -1,7 +1,31 @@
-let email = document.querySelector(".email")
-let senha = document.querySelector(".senha")
-const btnEnter = document.querySelector(".btn")
+let emailLogin = document.querySelector("#email")
+let senhaLogin = document.querySelector("#senha")
+let btnLogin = document.querySelector("#btn")
 
-if (email) {
+btnLogin.addEventListener('click', validarLogin)
+
+function validarLogin(event) {
+    event.preventDefault()
     
+    // Debug: mostrar o que foi digitado
+    console.log('Tentativa de login:', {
+        email: emailLogin.value,
+        senha: senhaLogin.value  // não mostra senha completa por segurança, mas confirma digitação
+    });
+    
+    //  BUSCA usuário cadastrado
+    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
+    console.log('Usuários cadastrados:', usuarios);
+    
+    const usuario = usuarios.find(u => u.email === emailLogin.value && u.senha === senhaLogin.value)
+    
+    console.log('Usuário encontrado:', usuario);
+    
+    if (usuario) {
+        window.location.href = "home.html"
+    } else {
+        alert(" Email ou senha incorretos!")
+        // Limpar senha por segurança
+        senhaLogin.value = '';
+    }
 }
