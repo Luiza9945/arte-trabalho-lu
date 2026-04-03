@@ -29,15 +29,19 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 0.3rem;
 }
 
+.texto p {
+    font-size: 1.2em;
+    color: #fff;}
+
 .texto h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 button.btn.btn-primary {
-    width: 100%;
+    width: 250px;
     background-color: rgb(70, 66, 19) !important;
     border-color: rgb(192, 192, 25) !important;
     font-size: 18px;
@@ -45,21 +49,13 @@ button.btn.btn-primary {
     border-radius: 5px;
 }
 
-button {
+.ar-registro {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    color: #1d113f;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    gap: 1rem;
 }
 
-.ar-registro {
-    margin-bottom: -9rem;
-}
 .ar-registro p {
      display: flex;
     justify-content: center;
@@ -67,9 +63,6 @@ button {
     font-size: 1.2em;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-p {
     color: #fff;
     font-size: 18px;
 }
