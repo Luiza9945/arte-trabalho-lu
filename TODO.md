@@ -1,9 +1,13 @@
-# TODO: Apply home.html image proportion technique to index.html
+# TODO: Make perfil-art.html responsive with Bootstrap
 
-## Steps:
-- [x] Create TODO.md
-- [ ] Step 1: Revise and edit css/style.css (pending feedback on height:auto)
-- [ ] Step 2: Verify changes preserve image proportions.
-- [ ] Step 3: Mark complete.
+## Plan Steps:
+
+1. [x] Make perfil-art.html responsive with Bootstrap (body flex, utilities).
+2. [x] Replace linha5 portfolio with home.html masonry image grid model.
+3. [x] Add home.css masonry styles to perfil-art.css for Pinterest-like responsive portfolio.
+4. [x] Responsive fonts/spacing using clamp().
+
+✅ Task completed with user feedback incorporated!
+
 
 
