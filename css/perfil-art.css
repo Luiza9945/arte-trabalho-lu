@@ -160,7 +160,7 @@
     }
 
     button {
-        padding: 5px !important;
+        padding: 5px 15px !important;
         background-color: #0d46af !important;
         color: #ffffffbd !important;
         border: 2px solid #140c5e !important;
