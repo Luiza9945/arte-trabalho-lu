@@ -51,7 +51,7 @@
 
     /* Masonry grid from home.html */
     .postagens {
-        padding: 1rem;
+        padding: 0 1rem;
         width: 100%;
         box-sizing: border-box;
         flex-grow: 1;
