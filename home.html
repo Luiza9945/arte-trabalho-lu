@@ -14,11 +14,13 @@
 <body>
     <header class="d-flex flex-column">
         <div class="linha4">
-            <div class="hashtags d-flex  justify-content-center">
+            <div class="hashtags d-flex ">
                 <span class="badge bg-transparent text-white me-2 mb-2">#arte</span>
                 <span class="badge bg-transparent text-white me-2 mb-2">#design</span>
                 <span class="badge bg-transparent text-white me-2 mb-2">#ilustração</span>
                 <span class="badge bg-transparent text-white me-2 mb-2">#pintura</span>
+                <span class="badge bg-transparent text-white me-2 mb-2">#escultura</span>
+                
                 <span class="badge bg-transparent text-white me-2 mb-2">#escultura</span>
             </div>
         </div>
@@ -28,10 +30,10 @@
         <div class="postagens">
             <div class="masonry">
                 <div class="pin">
-                    <img src="imgs/1.jpg" alt="Arte digital">
+                    <img src="imgs/1.jpg" alt="Arte digital"  onclick="openLightbox(this)">
                 </div>
                 <div class="pin">
-                    <img src="imgs/2.jpg" alt="Arte digital">
+                    <img src="imgs/2.jpg" alt="Arte digital"  onclick="openLightbox(this)">
                 </div>
                 <div class="pin">
                     <img src="imgs/3.jpg" alt="Arte digital">
@@ -77,6 +79,17 @@
                 </div>
             </div>
         </div>
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <div class="lightbox-content" onclick="event.stopPropagation()">
+                <span class="close" onclick="closeLightbox()"><i class="bi bi-arrow-left "></i></span>
+                <img id="lightbox-img" src="" alt="Imagem ampliada">
+                <div class="nav">
+                    <button id="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <button id="next" onclick="changeImage(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="mt-auto">
@@ -92,6 +105,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+        <script src="js/home.js"></script>
 </body>
 
 </html>

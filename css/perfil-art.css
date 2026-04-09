@@ -49,13 +49,14 @@
         background-color: #1d113f;
     }
 
-    /* Masonry grid from home.html */
     .postagens {
         padding: 0 1rem;
         width: 100%;
         box-sizing: border-box;
         flex-grow: 1;
     }
+
+    
 
     .masonry {
         columns: 3;

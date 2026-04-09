@@ -49,38 +49,51 @@
         <div id="posts"   class="postagens">
             <div class="masonry">
                 <div class="pin">
-                    <img id="imagem1" src="imgs/1.jpg" alt="Arte 1">
+                    <img src="imgs/1.jpg" alt="Arte 1" onclick="openLightbox(this)">
                 </div>
                 <div class="pin">
-                    <img src="imgs/2.jpg" alt="Arte 2">
+                    <img src="imgs/2.jpg" alt="Arte 2" onclick="openLightbox(this)">
                 </div>
                 <div class="pin">
-                    <img src="imgs/3.jpg" alt="Arte 3">
+                    <img src="imgs/3.jpg" alt="Arte 3" onclick="openLightbox(this)">
                 </div>
                 <div class="pin">
-                    <img src="imgs/4.jpg" alt="Arte 4">
+                    <img src="imgs/4.jpg" alt="Arte 4" onclick="openLightbox(this)">
                 </div>
                 <div class="pin">
-                    <img src="imgs/5.jpg" alt="Arte 5">
+                    <img src="imgs/5.jpg" alt="Arte 5" onclick="openLightbox(this)">
                 </div>
+                <div class="pin">
+                    <img src="imgs/6.jpg" alt="Arte 6" onclick="openLightbox(this)">
+                </div>
+                <div class="pin">
+                    <img src="imgs/7.jpg" alt="Arte 7" onclick="openLightbox(this)">
+                </div>
+                <div class="pin">
+                    <img src="imgs/8.jpg" alt="Arte 8" onclick="openLightbox(this)">
+                </div>
+                <div class="pin">
+                    <img src="imgs/9.jpg" alt="Arte 9" onclick="openLightbox(this)">
+                </div>
+                <div class="pin">
+                    <img src="imgs/10.jpg" alt="Arte 10" onclick="openLightbox(this)">
+                </div>
+                <div class="pin">
+                    <img src="imgs/11.jpg" alt="Arte 11" onclick="openLightbox(this)">
+                </div>
+            </div>
 
-                <div class="pin">
-                    <img src="imgs/6.jpg" alt="Arte 6">
-                </div>
-                <div class="pin">
-                    <img src="imgs/7.jpg" alt="Arte 7">
-                </div>
-                <div class="pin">
-                    <img src="imgs/8.jpg" alt="Arte 8">
-                </div>
-                <div class="pin">
-                    <img src="imgs/9.jpg" alt="Arte 9">
-                </div>
-                <div class="pin">
-                    <img src="imgs/10.jpg" alt="Arte 10">
-                </div>
-                <div class="pin">
-                    <img src="imgs/11.jpg" alt="Arte 11">
+
+
+        </div>
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <div class="lightbox-content" onclick="event.stopPropagation()">
+                <span class="close" onclick="closeLightbox()"><i class="bi bi-arrow-left "></i></span>
+                <img id="lightbox-img" src="" alt="Imagem ampliada">
+                <div class="nav">
+                    <button id="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <button id="next" onclick="changeImage(1)">&#10095;</button>
                 </div>
             </div>
         </div>
